@@ -20,37 +20,42 @@ namespace Calculator
 
         }
 
-        private float a, b, r;
+   
         private void button1_Click(object sender, EventArgs e)
         {
-            a = Convert.ToInt32(textBox1.Text);
-            b = Convert.ToInt32(textBox2.Text);
-            r = a * b;
-            textBox3.Text = r.ToString();
+            double FirstDigit  = Convert.ToDouble(textBox1.Text);
+            double SecondDigit  = Convert.ToDouble(textBox2.Text);
+           double answerDigit = FirstDigit * SecondDigit;
+            textBox3.Text = answerDigit.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            a = Convert.ToInt32(textBox1.Text);
-            b = Convert.ToInt32(textBox2.Text);
-            r = a / b;
-            textBox3.Text = r.ToString();
+            double FirstDigit = Convert.ToDouble(textBox1.Text);
+            double SecondDigit = Convert.ToDouble(textBox2.Text);
+            double answerDigit = FirstDigit / SecondDigit;
+            textBox3.Text = answerDigit.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            a = Convert.ToInt32(textBox1.Text);
-            b = Convert.ToInt32(textBox2.Text);
-            r = a + b;
-            textBox3.Text = r.ToString();
+            double FirstDigit = Convert.ToDouble(textBox1.Text);
+            double SecondDigit = Convert.ToDouble(textBox2.Text);
+            double answerDigit = FirstDigit + SecondDigit;
+            textBox3.Text = answerDigit.ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            a = Convert.ToInt32(textBox1.Text);
-            b = Convert.ToInt32(textBox2.Text);
-            r = a - b;
-            textBox3.Text = r.ToString();
+            double FirstDigit = Convert.ToDouble(textBox1.Text);
+            double SecondDigit = Convert.ToDouble(textBox2.Text);
+            double answerDigit = FirstDigit - SecondDigit;
+            textBox3.Text = answerDigit.ToString();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void label2_Click(object sender, EventArgs e)
