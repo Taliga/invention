@@ -23,34 +23,43 @@ namespace Calculator
    
         private void button1_Click(object sender, EventArgs e)
         {
-            double FirstDigit  = Convert.ToDouble(textBox1.Text);
-            double SecondDigit  = Convert.ToDouble(textBox2.Text);
-           double answerDigit = FirstDigit * SecondDigit;
+            double firstNumber = Convert.ToDouble(textBox1.Text);
+            double secondNumber = Convert.ToDouble(textBox2.Text);
+            double answerDigit;
+
+            switch (((Button)sender).Name)
+            {
+                case "Multiply":
+                    answerDigit = firstNumber * secondNumber;
+                    break;
+                case "Division":
+                    answerDigit = firstNumber / secondNumber;
+                    break;
+                    answerDigit = firstNumber + secondNumber;
+                    break;
+                case "Substraction":
+                    answerDigit = firstNumber - secondNumber;
+                    break;
+                default:
+                    throw new Exception("Неизвестная операция");
+                
+            }
             textBox3.Text = answerDigit.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double FirstDigit = Convert.ToDouble(textBox1.Text);
-            double SecondDigit = Convert.ToDouble(textBox2.Text);
-            double answerDigit = FirstDigit / SecondDigit;
-            textBox3.Text = answerDigit.ToString();
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            double FirstDigit = Convert.ToDouble(textBox1.Text);
-            double SecondDigit = Convert.ToDouble(textBox2.Text);
-            double answerDigit = FirstDigit + SecondDigit;
-            textBox3.Text = answerDigit.ToString();
+          
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            double FirstDigit = Convert.ToDouble(textBox1.Text);
-            double SecondDigit = Convert.ToDouble(textBox2.Text);
-            double answerDigit = FirstDigit - SecondDigit;
-            textBox3.Text = answerDigit.ToString();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -68,6 +77,11 @@ namespace Calculator
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void eventLog1_EntryWritten(object sender, System.Diagnostics.EntryWrittenEventArgs e)
+        {
+
         }
     }
 }
