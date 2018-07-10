@@ -16,6 +16,12 @@ namespace Calculator.TwoArguments
                     return  new Add();
                 case "Substraction":
                     return  new Substraction();
+                case "Max":
+                    return new Max();
+                case "NumberPow":
+                    return new NumberPow();
+                case "NumberRoot":
+                    return new NumberRoot();
                 default:
                     throw new Exception("Неизвестная операция");
             }

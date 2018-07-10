@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Remoting.Messaging;
 
 namespace Calculator.OneArgument
 {
@@ -36,6 +37,20 @@ namespace Calculator.OneArgument
                     return new InverseNumber();
                 case "MultiplicationOnFive":
                     return new MultiplicationByFive();
+                case "ArcSin":
+                    return new ArcSinus();
+                case "Stepen":
+                    return new Stepen();
+                case "LogE":
+                    return new LogE();
+                case "Log10":
+                    return new Log10();
+                case "TanH":
+                    return new TanH();
+                case "SinH":
+                    return new SinH();
+                case "CosH":
+                    return new CosH();
                 default:
                     throw new Exception("Неизвестная операция");
             }
