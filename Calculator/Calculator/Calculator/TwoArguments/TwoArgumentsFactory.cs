@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Calculator
+namespace Calculator.TwoArguments
 {
     public class TwoArgumentsFactory
     {
-        public static Calculator CreateCalculator(string calculatorName)
+        public static ICalculator CreateCalculator(string calculatorName)
         {
             switch (calculatorName)
             {
