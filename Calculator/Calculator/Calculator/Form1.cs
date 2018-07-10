@@ -16,34 +16,23 @@ namespace Calculator
         {
           
             InitializeComponent();
-          
+       
+
 
         }
 
-   
+       
+
         private void button1_Click(object sender, EventArgs e)
         {
             double firstNumber = Convert.ToDouble(textBox1.Text);
             double secondNumber = Convert.ToDouble(textBox2.Text);
-            double answerDigit;
+           
+            Calculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
+            double answerDigit = calculator.Calculate(firstNumber, secondNumber);
 
-            switch (((Button)sender).Name)
-            {
-                case "Multiply":
-                    answerDigit = firstNumber * secondNumber;
-                    break;
-                case "Division":
-                    answerDigit = firstNumber / secondNumber;
-                    break;
-                    answerDigit = firstNumber + secondNumber;
-                    break;
-                case "Substraction":
-                    answerDigit = firstNumber - secondNumber;
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
-                
-            }
+
+
             textBox3.Text = answerDigit.ToString();
         }
 
