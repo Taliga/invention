@@ -10,17 +10,15 @@ namespace CalculatorTest
 {
     public class ClassMultiply
     {
-
-        [TestFixture]
-        public class MultiplyTests
+        [TestCase(0, 0, 0)]
+        [TestCase(3, 4, 12)]
+        [TestCase(-7, -2, 14)]
+        public void CalculateTest(double firstValue, double secondValue, double expected)
         {
-            [Test]
-
-            public void MultiplyTest()
-            {
-                var calculator = new Multiply();
-                Assert.AreEqual(3, calculator.Calculate(3, 1));
-            }
+            var calculator = new Multiply();
+            var actualResult = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, actualResult);
         }
+        
     }
 }

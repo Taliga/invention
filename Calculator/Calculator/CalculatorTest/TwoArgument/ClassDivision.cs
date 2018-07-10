@@ -9,12 +9,14 @@ namespace CalculatorTest
         [TestFixture]
         public class DivisionTests
         {
-            [Test]
-
-            public void DivisionTest()
+            [TestCase(6, 2, 3)]
+            [TestCase(4, 4, 1)]
+            [TestCase(-18, -2, 9)]
+            public void CalculateTest(double firstValue, double secondValue, double expected)
             {
                 var calculator = new Division();
-                Assert.AreEqual(3, calculator.Calculate(3, 1));
+                var actualResult = calculator.Calculate(firstValue, secondValue);
+                Assert.AreEqual(expected, actualResult);
             }
         }
     }

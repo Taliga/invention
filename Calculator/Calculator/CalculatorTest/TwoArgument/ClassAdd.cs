@@ -10,16 +10,20 @@ namespace CalculatorTest
         [TestFixture]
         public class AddTests
         {
-            [Test]
-            
-            public void AddTest()
+            [TestCase(0, 0, 0)]
+            [TestCase(3, 4, 7)]
+            [TestCase(-7, -2, -9)]
+            public void CalculateTest(double firstValue, double secondValue, double expected)
             {
-               var calculator = new Add();
-                Assert.AreEqual(4, calculator.Calculate(3,1));
+                var calculator = new Add ();
+                var actualResult = calculator.Calculate(firstValue, secondValue);
+                Assert.AreEqual(expected, actualResult);
             }
+
         }
+    }
     }
 
 
 
-}
+
