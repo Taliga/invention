@@ -6,14 +6,14 @@ namespace CalculatorTest.OneArgument
     public class ClassSinus
     {
 
-       [TestCase(0, 0)]
-     //   [TestCase(90, 1)]
-      //  [TestCase(180, 0)]
+       [TestCase(70, 0.7738)]
+       [TestCase(45, 0.8509)]
+       [TestCase(60, -0.3048)]
         public void CalculateTest(double firstValue, double expected)
         {
             var calculator = new Sinus();
             var actualResult = calculator.Calculate(firstValue);
-            Assert.AreEqual(expected, actualResult);
+            Assert.AreEqual(expected, actualResult,0.0001);
         }
     }
 }
