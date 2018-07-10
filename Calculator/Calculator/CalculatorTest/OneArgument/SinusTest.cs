@@ -3,17 +3,17 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-    public class ClassModule
+    public class SinusTest
     {
 
-        [TestCase(-12, 12)]
-        [TestCase(3, 3)]
-        [TestCase(-11, 11)]
+       [TestCase(70, 0.7738)]
+       [TestCase(45, 0.8509)]
+       [TestCase(60, -0.3048)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new Module();
+            var calculator = new Sinus();
             var actualResult = calculator.Calculate(firstValue);
-            Assert.AreEqual(expected, actualResult);
+            Assert.AreEqual(expected, actualResult,0.0001);
         }
     }
 }

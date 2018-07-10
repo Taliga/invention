@@ -47,14 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OneArgument\ClassLogarithm.cs" />
-    <Compile Include="OneArgument\ClassModule.cs" />
-    <Compile Include="OneArgument\ClassSinus.cs" />
-    <Compile Include="OneArgument\ClassSquaring.cs" />
-    <Compile Include="TwoArgument\ClassAdd.cs" />
-    <Compile Include="TwoArgument\ClassDivision.cs" />
-    <Compile Include="TwoArgument\ClassMultiply.cs" />
-    <Compile Include="TwoArgument\ClassSubstraction.cs" />
+    <Compile Include="OneArgument\OneArgumentFactoryTest.cs" />
+    <Compile Include="OneArgument\LogarithmTest.cs" />
+    <Compile Include="OneArgument\ModuleTest.cs" />
+    <Compile Include="OneArgument\SinusTest.cs" />
+    <Compile Include="OneArgument\SquaringTest.cs" />
+    <Compile Include="TwoArgument\TwoArgumentFactoryTest.cs" />
+    <Compile Include="TwoArgument\AddTest.cs" />
+    <Compile Include="TwoArgument\DivisionTest.cs" />
+    <Compile Include="TwoArgument\MultiplyTest.cs" />
+    <Compile Include="TwoArgument\SubstractionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

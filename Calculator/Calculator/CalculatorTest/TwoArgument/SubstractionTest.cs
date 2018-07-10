@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace CalculatorTest.TwoArgument
 {
    
-        public class ClassSubstraction
+        public class SubstractionTest
         {
 
         [TestCase(0, 0, 0)]

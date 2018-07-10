@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.TwoArgument
 {
-    public class ClassMultiply
+    public class MultiplyTest
     {
         [TestCase(0, 0, 0)]
         [TestCase(3, 4, 12)]
