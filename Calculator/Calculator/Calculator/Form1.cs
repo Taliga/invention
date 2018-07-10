@@ -89,5 +89,10 @@ namespace Calculator
 
             textBox3.Text = answerDigit.ToString();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
