@@ -47,7 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="TwoArgument\ClassAdd.cs" />
+    <Compile Include="TwoArgument\ClassDivision.cs" />
+    <Compile Include="TwoArgument\ClassMultiply.cs" />
+    <Compile Include="TwoArgument\ClassSubstraction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
