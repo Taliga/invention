@@ -46,6 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgument\Arccosinus.cs" />
+    <Compile Include="OneArgument\Arccotangent.cs" />
+    <Compile Include="OneArgument\Arctangent.cs" />
+    <Compile Include="OneArgument\Cosinus.cs" />
+    <Compile Include="OneArgument\Cotangent.cs" />
+    <Compile Include="OneArgument\Cube.cs" />
+    <Compile Include="OneArgument\InverseNumber.cs" />
+    <Compile Include="OneArgument\MultiplicationByFive.cs" />
+    <Compile Include="OneArgument\Radical.cs" />
+    <Compile Include="OneArgument\Tangent.cs" />
     <Compile Include="TwoArguments\Add.cs" />
     <Compile Include="TwoArguments\Calculator.cs" />
     <Compile Include="TwoArguments\Division.cs" />

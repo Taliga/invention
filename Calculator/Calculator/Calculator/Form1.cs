@@ -20,15 +20,21 @@ namespace Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double firstNumber = Convert.ToDouble(textBox1.Text);
-            double secondNumber = Convert.ToDouble(textBox2.Text);
-           
-            ICalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
-            double answerDigit = calculator.Calculate(firstNumber, secondNumber);
+            try
+            {
+                double firstNumber = Convert.ToDouble(textBox1.Text);
+                double secondNumber = Convert.ToDouble(textBox2.Text);
+
+                ICalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button)sender).Name);
+                double answerDigit = calculator.Calculate(firstNumber, secondNumber);
 
 
 
-            textBox3.Text = answerDigit.ToString();
+                textBox3.Text = answerDigit.ToString();
+            }
+            catch (Exception exc) {
+                textBox3.Text = exc.Message;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -43,6 +43,16 @@
             this.Sinus = new System.Windows.Forms.Button();
             this.Squaring = new System.Windows.Forms.Button();
             this.Module = new System.Windows.Forms.Button();
+            this.Cotangent = new System.Windows.Forms.Button();
+            this.Tangent = new System.Windows.Forms.Button();
+            this.Cosine = new System.Windows.Forms.Button();
+            this.Arccotangent = new System.Windows.Forms.Button();
+            this.Arctangent = new System.Windows.Forms.Button();
+            this.Arccosine = new System.Windows.Forms.Button();
+            this.InverseNumber = new System.Windows.Forms.Button();
+            this.Cube = new System.Windows.Forms.Button();
+            this.Radical = new System.Windows.Forms.Button();
+            this.MultiplicationOnFive = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -183,11 +193,121 @@
             this.Module.UseVisualStyleBackColor = true;
             this.Module.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // Cotangent
+            // 
+            this.Cotangent.Location = new System.Drawing.Point(384, 61);
+            this.Cotangent.Name = "Cotangent";
+            this.Cotangent.Size = new System.Drawing.Size(48, 44);
+            this.Cotangent.TabIndex = 14;
+            this.Cotangent.Text = "ctg";
+            this.Cotangent.UseVisualStyleBackColor = true;
+            this.Cotangent.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // Tangent
+            // 
+            this.Tangent.Location = new System.Drawing.Point(328, 61);
+            this.Tangent.Name = "Tangent";
+            this.Tangent.Size = new System.Drawing.Size(50, 44);
+            this.Tangent.TabIndex = 15;
+            this.Tangent.Text = "tg";
+            this.Tangent.UseVisualStyleBackColor = true;
+            this.Tangent.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // Cosine
+            // 
+            this.Cosine.Location = new System.Drawing.Point(275, 61);
+            this.Cosine.Name = "Cosine";
+            this.Cosine.Size = new System.Drawing.Size(47, 44);
+            this.Cosine.TabIndex = 16;
+            this.Cosine.Text = "cos";
+            this.Cosine.UseVisualStyleBackColor = true;
+            this.Cosine.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // Arccotangent
+            // 
+            this.Arccotangent.Location = new System.Drawing.Point(384, 111);
+            this.Arccotangent.Name = "Arccotangent";
+            this.Arccotangent.Size = new System.Drawing.Size(47, 43);
+            this.Arccotangent.TabIndex = 17;
+            this.Arccotangent.Text = "arcctg";
+            this.Arccotangent.UseVisualStyleBackColor = true;
+            this.Arccotangent.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // Arctangent
+            // 
+            this.Arctangent.Location = new System.Drawing.Point(328, 112);
+            this.Arctangent.Name = "Arctangent";
+            this.Arctangent.Size = new System.Drawing.Size(49, 42);
+            this.Arctangent.TabIndex = 18;
+            this.Arctangent.Text = "arctg";
+            this.Arctangent.UseVisualStyleBackColor = true;
+            this.Arctangent.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // Arccosine
+            // 
+            this.Arccosine.Location = new System.Drawing.Point(275, 112);
+            this.Arccosine.Name = "Arccosine";
+            this.Arccosine.Size = new System.Drawing.Size(47, 42);
+            this.Arccosine.TabIndex = 19;
+            this.Arccosine.Text = "arccos";
+            this.Arccosine.UseVisualStyleBackColor = true;
+            this.Arccosine.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // InverseNumber
+            // 
+            this.InverseNumber.Location = new System.Drawing.Point(384, 161);
+            this.InverseNumber.Name = "InverseNumber";
+            this.InverseNumber.Size = new System.Drawing.Size(48, 42);
+            this.InverseNumber.TabIndex = 20;
+            this.InverseNumber.Text = "1/x";
+            this.InverseNumber.UseVisualStyleBackColor = true;
+            this.InverseNumber.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // Cube
+            // 
+            this.Cube.Location = new System.Drawing.Point(328, 161);
+            this.Cube.Name = "Cube";
+            this.Cube.Size = new System.Drawing.Size(50, 42);
+            this.Cube.TabIndex = 21;
+            this.Cube.Text = "x^3";
+            this.Cube.UseVisualStyleBackColor = true;
+            this.Cube.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // Radical
+            // 
+            this.Radical.Location = new System.Drawing.Point(275, 161);
+            this.Radical.Name = "Radical";
+            this.Radical.Size = new System.Drawing.Size(47, 42);
+            this.Radical.TabIndex = 22;
+            this.Radical.Text = "rad";
+            this.Radical.UseVisualStyleBackColor = true;
+            this.Radical.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // MultiplicationOnFive
+            // 
+            this.MultiplicationOnFive.Location = new System.Drawing.Point(384, 210);
+            this.MultiplicationOnFive.Name = "MultiplicationOnFive";
+            this.MultiplicationOnFive.Size = new System.Drawing.Size(48, 38);
+            this.MultiplicationOnFive.TabIndex = 23;
+            this.MultiplicationOnFive.Text = "x*5";
+            this.MultiplicationOnFive.UseVisualStyleBackColor = true;
+            this.MultiplicationOnFive.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 376);
+            this.Controls.Add(this.MultiplicationOnFive);
+            this.Controls.Add(this.Radical);
+            this.Controls.Add(this.Cube);
+            this.Controls.Add(this.InverseNumber);
+            this.Controls.Add(this.Arccosine);
+            this.Controls.Add(this.Arctangent);
+            this.Controls.Add(this.Arccotangent);
+            this.Controls.Add(this.Cosine);
+            this.Controls.Add(this.Tangent);
+            this.Controls.Add(this.Cotangent);
             this.Controls.Add(this.Module);
             this.Controls.Add(this.Squaring);
             this.Controls.Add(this.Sinus);
@@ -227,6 +347,16 @@
         private System.Windows.Forms.Button Squaring;
         private System.Windows.Forms.Button Sinus;
         private System.Windows.Forms.Button Logarithm;
+        private System.Windows.Forms.Button MultiplicationOnFive;
+        private System.Windows.Forms.Button Radical;
+        private System.Windows.Forms.Button Cube;
+        private System.Windows.Forms.Button InverseNumber;
+        private System.Windows.Forms.Button Arccosine;
+        private System.Windows.Forms.Button Arctangent;
+        private System.Windows.Forms.Button Arccotangent;
+        private System.Windows.Forms.Button Cosine;
+        private System.Windows.Forms.Button Tangent;
+        private System.Windows.Forms.Button Cotangent;
     }
 }
 

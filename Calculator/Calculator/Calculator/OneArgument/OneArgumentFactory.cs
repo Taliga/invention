@@ -16,6 +16,26 @@ namespace Calculator.OneArgument
                     return new Logarithm();
                 case "Sinus":
                     return new Sinus();
+                case "Cosine":
+                    return new Cosinus();
+                case "Tangent":
+                    return new Tangent();
+                case "Cotangent":
+                    return new Cotangent();
+                case "Arccosine":
+                    return new Arccosinus();
+                case "Arctangent":
+                    return new Arctangent();
+                case "Arccotangent":
+                    return new Arccotangent();
+                case "Radical":
+                    return new Radical();
+                case "Cube":
+                    return new Cube();
+                case "InverseNumber":
+                    return new InverseNumber();
+                case "MultiplicationOnFive":
+                    return new MultiplicationByFive();
                 default:
                     throw new Exception("Неизвестная операция");
             }
