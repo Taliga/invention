@@ -1,7 +1,7 @@
 ﻿using Calculator.OneArgument;
 using NUnit.Framework;
 
-namespace CalculatorTest
+namespace CalculatorTest.OneArgument
 {
     public class ClassLogarithm
     {

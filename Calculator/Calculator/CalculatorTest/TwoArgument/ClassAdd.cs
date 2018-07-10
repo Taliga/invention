@@ -1,8 +1,7 @@
 ﻿using Calculator.TwoArguments;
 using NUnit.Framework;
 
-
-namespace CalculatorTest
+namespace CalculatorTest.TwoArgument
 {
     public class ClassAdd
     {
