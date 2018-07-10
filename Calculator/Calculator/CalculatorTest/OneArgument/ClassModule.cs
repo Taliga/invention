@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Calculator.OneArgument;
+using NUnit.Framework;
+
+namespace CalculatorTest
+{
+    public class ClassModule
+    {
+
+        [TestCase(-12, 12)]
+        [TestCase(3, 3)]
+        [TestCase(-11, 11)]
+        public void CalculateTest(double firstValue, double expected)
+        {
+            var calculator = new Module();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult);
+        }
+    }
+}
