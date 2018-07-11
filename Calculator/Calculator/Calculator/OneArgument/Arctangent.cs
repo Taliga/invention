@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    class Arctangent : IOoneCalculator
+   public class Arctangent : IOoneCalculator
     {
 
         public double Calculate(double firstArgument) {

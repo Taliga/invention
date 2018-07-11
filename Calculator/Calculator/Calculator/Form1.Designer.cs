@@ -45,7 +45,7 @@
             this.Cotangent = new System.Windows.Forms.Button();
             this.Tangent = new System.Windows.Forms.Button();
             this.Cosine = new System.Windows.Forms.Button();
-            this.Arccotangent = new System.Windows.Forms.Button();
+            this.Min = new System.Windows.Forms.Button();
             this.Arctangent = new System.Windows.Forms.Button();
             this.Arccosine = new System.Windows.Forms.Button();
             this.InverseNumber = new System.Windows.Forms.Button();
@@ -226,15 +226,15 @@
             this.Cosine.UseVisualStyleBackColor = true;
             this.Cosine.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // Arccotangent
+            // Min
             // 
-            this.Arccotangent.Location = new System.Drawing.Point(369, 161);
-            this.Arccotangent.Name = "Arccotangent";
-            this.Arccotangent.Size = new System.Drawing.Size(47, 43);
-            this.Arccotangent.TabIndex = 17;
-            this.Arccotangent.Text = "arcctg";
-            this.Arccotangent.UseVisualStyleBackColor = true;
-            this.Arccotangent.Click += new System.EventHandler(this.button1_Click_1);
+            this.Min.Location = new System.Drawing.Point(369, 161);
+            this.Min.Name = "Min";
+            this.Min.Size = new System.Drawing.Size(47, 43);
+            this.Min.TabIndex = 17;
+            this.Min.Text = "Min";
+            this.Min.UseVisualStyleBackColor = true;
+            this.Min.Click += new System.EventHandler(this.button1_Click);
             // 
             // Arctangent
             // 
@@ -417,7 +417,7 @@
             this.Controls.Add(this.InverseNumber);
             this.Controls.Add(this.Arccosine);
             this.Controls.Add(this.Arctangent);
-            this.Controls.Add(this.Arccotangent);
+            this.Controls.Add(this.Min);
             this.Controls.Add(this.Cosine);
             this.Controls.Add(this.Tangent);
             this.Controls.Add(this.Cotangent);
@@ -465,7 +465,7 @@
         private System.Windows.Forms.Button InverseNumber;
         private System.Windows.Forms.Button Arccosine;
         private System.Windows.Forms.Button Arctangent;
-        private System.Windows.Forms.Button Arccotangent;
+        private System.Windows.Forms.Button Min;
         private System.Windows.Forms.Button Cosine;
         private System.Windows.Forms.Button Tangent;
         private System.Windows.Forms.Button Cotangent;

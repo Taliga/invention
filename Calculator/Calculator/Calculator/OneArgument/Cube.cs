@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    class Cube : IOoneCalculator
+    public class Cube : IOoneCalculator
     {
 
         public double Calculate(double firstArgument)

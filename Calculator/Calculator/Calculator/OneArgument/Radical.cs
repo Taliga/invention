@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    class Radical : IOoneCalculator
+   public class Radical : IOoneCalculator
     {
 
         public double Calculate(double firstArgument) {

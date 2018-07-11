@@ -27,8 +27,6 @@ namespace Calculator.OneArgument
                     return new Arccosinus();
                 case "Arctangent":
                     return new Arctangent();
-                case "Arccotangent":
-                    return new Arccotangent();
                 case "Radical":
                     return new Radical();
                 case "Cube":

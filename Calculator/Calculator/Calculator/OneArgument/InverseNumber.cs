@@ -1,6 +1,6 @@
 ﻿namespace Calculator.OneArgument
 {
-    class InverseNumber : IOoneCalculator
+   public class InverseNumber : IOoneCalculator
     {
 
         public double Calculate(double firstArgument)

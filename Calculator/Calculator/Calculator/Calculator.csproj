@@ -54,7 +54,7 @@
     <Compile Include="TwoArguments\NumberPow.cs" />
     <Compile Include="TwoArguments\NumberRoot.cs" />
     <Compile Include="OneArgument\Arccosinus.cs" />
-    <Compile Include="OneArgument\Arccotangent.cs" />
+    <Compile Include="TwoArguments\Min.cs" />
     <Compile Include="OneArgument\Arctangent.cs" />
     <Compile Include="OneArgument\Cosinus.cs" />
     <Compile Include="OneArgument\Cotangent.cs" />

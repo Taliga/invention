@@ -1,4 +1,5 @@
 ﻿using System;
+using Calculator.OneArgument;
 
 namespace Calculator.TwoArguments
 {
@@ -22,6 +23,8 @@ namespace Calculator.TwoArguments
                     return new NumberPow();
                 case "NumberRoot":
                     return new NumberRoot();
+                case "Min":
+                    return new Min();
                 default:
                     throw new Exception("Неизвестная операция");
             }

@@ -46,10 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgument\ArccosinusTest.cs" />
+    <Compile Include="TwoArgument\MinTest.cs" />
+    <Compile Include="OneArgument\ArctangentTest.cs" />
+    <Compile Include="OneArgument\CosinusTest.cs" />
+    <Compile Include="OneArgument\CotangentTest.cs" />
+    <Compile Include="OneArgument\CubeTest.cs" />
+    <Compile Include="OneArgument\InverseNumberTest.cs" />
+    <Compile Include="OneArgument\MultiplicationByFiveTest.cs" />
     <Compile Include="OneArgument\ArcSinusTest.cs" />
     <Compile Include="OneArgument\CosHTest.cs" />
     <Compile Include="OneArgument\Log10Test.cs" />
     <Compile Include="OneArgument\LogETest.cs" />
+    <Compile Include="OneArgument\RadicalTest.cs" />
+    <Compile Include="OneArgument\TangentTest.cs" />
     <Compile Include="TwoArgument\MaxTest.cs" />
     <Compile Include="TwoArgument\NumberPowTest.cs" />
     <Compile Include="TwoArgument\NumberRootTest.cs" />

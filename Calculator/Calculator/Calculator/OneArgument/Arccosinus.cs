@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    class Arccosinus : IOoneCalculator
+    public class Arccosinus : IOoneCalculator
     {
 
         public double Calculate(double firstArgument) {

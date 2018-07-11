@@ -18,8 +18,15 @@ namespace CalculatorTest.OneArgument
         [TestCase("TanH", typeof(TanH))]
         [TestCase("SinH", typeof(SinH))]
         [TestCase("CosH", typeof(CosH))]
-
-
+        [TestCase("Radical", typeof(Radical))]
+        [TestCase("MultiplicationOnFive", typeof(MultiplicationByFive))]
+        [TestCase("Cosine", typeof(Cosinus))]
+        [TestCase("InverseNumber", typeof(InverseNumber))]
+        [TestCase("Cotangent", typeof(Cotangent))]
+        [TestCase("Tangent", typeof(Tangent))]
+        [TestCase("Arccosine", typeof(Arccosinus))]
+        [TestCase("Arctangent", typeof(Arctangent))]
+        [TestCase("Cube", typeof(Cube))]
         public void CalculateTest(string name, Type type)
         {
             var calculator = OneArgumentFactory.CreateCalculator(name);

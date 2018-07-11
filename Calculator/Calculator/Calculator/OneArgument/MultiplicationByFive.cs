@@ -1,6 +1,6 @@
 ﻿namespace Calculator.OneArgument
 {
-    class MultiplicationByFive : IOoneCalculator
+  public  class MultiplicationByFive : IOoneCalculator
     {
 
         public double Calculate(double firstArgument) {

@@ -1,4 +1,5 @@
 ﻿using System;
+using Calculator.OneArgument;
 using Calculator.TwoArguments;
 using NUnit.Framework;
 
@@ -14,6 +15,7 @@ namespace CalculatorTest.TwoArgument
         [TestCase("Max", typeof(Max))]
         [TestCase("NumberPow", typeof(NumberPow))]
         [TestCase("NumberRoot", typeof(NumberRoot))]
+        [TestCase("Min", typeof(Min))]
 
         public void CalculateTest(string name, Type type)
         {
