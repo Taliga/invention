@@ -46,21 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArcSinusTest.cs" />
-    <Compile Include="CosHTest.cs" />
-    <Compile Include="Log10Test.cs" />
-    <Compile Include="LogETest.cs" />
-    <Compile Include="MaxTest.cs" />
-    <Compile Include="NumberPowTest.cs" />
-    <Compile Include="NumberRootTest.cs" />
+    <Compile Include="OneArgument\ArcSinusTest.cs" />
+    <Compile Include="OneArgument\CosHTest.cs" />
+    <Compile Include="OneArgument\Log10Test.cs" />
+    <Compile Include="OneArgument\LogETest.cs" />
+    <Compile Include="TwoArgument\MaxTest.cs" />
+    <Compile Include="TwoArgument\NumberPowTest.cs" />
+    <Compile Include="TwoArgument\NumberRootTest.cs" />
     <Compile Include="OneArgument\OneArgumentFactoryTest.cs" />
     <Compile Include="OneArgument\LogarithmTest.cs" />
     <Compile Include="OneArgument\ModuleTest.cs" />
     <Compile Include="OneArgument\SinusTest.cs" />
     <Compile Include="OneArgument\SquaringTest.cs" />
-    <Compile Include="SinusHTest.cs" />
-    <Compile Include="StepenTest.cs" />
-    <Compile Include="TanHTest.cs" />
+    <Compile Include="OneArgument\SinusHTest.cs" />
+    <Compile Include="OneArgument\StepenTest.cs" />
+    <Compile Include="OneArgument\TanHTest.cs" />
     <Compile Include="TwoArgument\TwoArgumentFactoryTest.cs" />
     <Compile Include="TwoArgument\AddTest.cs" />
     <Compile Include="TwoArgument\DivisionTest.cs" />
