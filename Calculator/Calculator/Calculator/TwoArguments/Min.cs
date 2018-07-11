@@ -1,7 +1,6 @@
 ﻿using System;
-using Calculator.TwoArguments;
 
-namespace Calculator.OneArgument
+namespace Calculator.TwoArguments
 {
   public  class Min : ICalculator
     {
