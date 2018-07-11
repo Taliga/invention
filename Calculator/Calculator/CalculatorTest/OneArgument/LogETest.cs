@@ -1,4 +1,5 @@
-﻿using Calculator.OneArgument;
+﻿using System;
+using Calculator.OneArgument;
 using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
@@ -17,6 +18,24 @@ namespace CalculatorTest.OneArgument
                 Assert.AreEqual(expected, actualResult, 0.01);
             }
     }
-        
+
+        [TestCase(-1)]
+
+        public void ExceptionLessThanZeroTest(double firstArgument)
+        {
+            var calculator = new LogE();
+            Assert.Throws<Exception>(() => calculator.Calculate(firstArgument));
+
+        }
+
+
+        [TestCase(0)]
+        public void ExceptionZeroTest(double firstArgument)
+        {
+            var calculator = new LogE();
+            Assert.Throws<Exception>(() => calculator.Calculate(firstArgument));
+
+        }
+
     }
 }

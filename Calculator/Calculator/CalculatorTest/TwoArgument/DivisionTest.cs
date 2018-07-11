@@ -1,4 +1,6 @@
-﻿using Calculator.TwoArguments;
+﻿using System;
+using Calculator.OneArgument;
+using Calculator.TwoArguments;
 using NUnit.Framework;
 
 namespace CalculatorTest.TwoArgument
@@ -20,7 +22,16 @@ namespace CalculatorTest.TwoArgument
             }
         }
 
+    
 
+
+        [TestCase(-10, 0)]
+        public void ExceptionZeroTest(double firstArgument, double secondArgument)
+        {
+            var calculator = new Division();
+            Assert.Throws<Exception>(() => calculator.Calculate(firstArgument, secondArgument));
+
+        }
 
     }
 

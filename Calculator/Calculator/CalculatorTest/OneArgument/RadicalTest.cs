@@ -1,4 +1,5 @@
-﻿using Calculator.OneArgument;
+﻿using System;
+using Calculator.OneArgument;
 using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
@@ -18,5 +19,13 @@ namespace CalculatorTest.OneArgument
             }
         }
 
+        [TestCase(-1)]
+
+        public void ExceptionLessThanZeroTest(double firstArgument)
+        {
+            var calculator = new Radical();
+            Assert.Throws<Exception>(() => calculator.Calculate(firstArgument));
+
+        }
     }
 }

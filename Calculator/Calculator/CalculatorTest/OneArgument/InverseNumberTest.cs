@@ -1,4 +1,5 @@
-﻿using Calculator.OneArgument;
+﻿using System;
+using Calculator.OneArgument;
 using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
@@ -17,5 +18,14 @@ namespace CalculatorTest.OneArgument
                 Assert.AreEqual(expected, actualResult,0.01);
             }
         }
+
+        [TestCase(0)]
+        public void ExceptionTest(double firstArgument)
+        {
+            var calculator = new InverseNumber();
+            Assert.Throws<Exception>(() => calculator.Calculate(firstArgument));
+
+        }
+
     }
 }
