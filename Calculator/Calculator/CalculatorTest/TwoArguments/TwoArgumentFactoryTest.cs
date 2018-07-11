@@ -2,11 +2,11 @@
 using Calculator.TwoArguments;
 using NUnit.Framework;
 
-namespace CalculatorTest.TwoArgument
+namespace CalculatorTest.TwoArguments
 {
+    [TestFixture]
     public class TwoArgumentFactoryTest
     {
-
         [TestCase("Add", typeof(Add))]
         [TestCase("Substraction", typeof(Substraction))]
         [TestCase("Division", typeof(Division))]
@@ -15,13 +15,10 @@ namespace CalculatorTest.TwoArgument
         [TestCase("NumberPow", typeof(NumberPow))]
         [TestCase("NumberRoot", typeof(NumberRoot))]
         [TestCase("Min", typeof(Min))]
-
         public void CalculateTest(string name, Type type)
         {
             var calculator = TwoArgumentsFactory.CreateCalculator(name);
-
             Assert.IsInstanceOf(type, calculator);
         }
-
     }
 }

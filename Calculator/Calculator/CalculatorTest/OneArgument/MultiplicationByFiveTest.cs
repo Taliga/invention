@@ -3,19 +3,17 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-   
-        public class MultiplicationByFiveTest
+    [TestFixture]
+    public class MultiplicationByFiveTest
+    {
+        [TestCase(2, 10)]
+        [TestCase(3, 15)]
+        [TestCase(5, 25)]
+        public void CalculateTest(double firstValue, double expected)
         {
-            [TestCase(2, 10)]
-            [TestCase(3, 15)]
-            [TestCase(5, 25)]
-            public void CalculateTest(double firstValue, double expected)
-            {
-                var calculator = new MultiplicationByFive();
-                var actualResult = calculator.Calculate(firstValue);
-                Assert.AreEqual(expected, actualResult);
-            }
+            var calculator = new MultiplicationByFive();
+            var actualResult = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, actualResult);
         }
-
-    
+    }
 }

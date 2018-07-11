@@ -1,10 +1,14 @@
 ﻿using System;
-using Calculator.OneArgument;
 
 namespace Calculator.TwoArguments
 {
-    public class TwoArgumentsFactory
+    public static class TwoArgumentsFactory
     {
+        /// <summary>
+        /// Create Factory TwoArgumentsFactory
+        /// </summary>
+        /// <param name="calculatorName"></param>
+        /// <returns></returns>
         public static ICalculator CreateCalculator(string calculatorName)
         {
             switch (calculatorName)

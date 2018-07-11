@@ -79,7 +79,7 @@
     <Compile Include="OneArgument\Module.cs" />
     <Compile Include="TwoArguments\Multiply.cs" />
     <Compile Include="OneArgument\OneArgumentFactory.cs" />
-    <Compile Include="OneArgument\OoneCalculator.cs" />
+    <Compile Include="OneArgument\IOoneCalculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="OneArgument\Sinus.cs" />

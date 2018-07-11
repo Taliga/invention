@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-
+    [TestFixture]
     public class InverseNumberTest
     {
         [TestCase(2, 0.5)]
@@ -16,14 +16,11 @@ namespace CalculatorTest.OneArgument
             var actualResult = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actualResult, 0.01);
         }
-
-
         [TestCase(0)]
         public void ExceptionTest(double firstArgument)
         {
             var calculator = new InverseNumber();
             Assert.Throws<Exception>(() => calculator.Calculate(firstArgument));
-
         }
     }
 }

@@ -3,9 +3,9 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
+    [TestFixture]
     public class SquaringTest
     {
-
         [TestCase(12, 144)]
         [TestCase(30, 900)]
         [TestCase(11, 121)]

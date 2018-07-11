@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-
+    [TestFixture]
     public class LogETestS
     {
         [TestCase(3.33, 1.20)]
@@ -16,25 +16,12 @@ namespace CalculatorTest.OneArgument
             var actualResult = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, actualResult, 0.01);
         }
-
-
         [TestCase(-1)]
-
+        [TestCase(0)]
         public void ExceptionLessThanZeroTest(double firstArgument)
         {
             var calculator = new LogE();
             Assert.Throws<Exception>(() => calculator.Calculate(firstArgument));
-
         }
-
-
-        [TestCase(0)]
-        public void ExceptionZeroTest(double firstArgument)
-        {
-            var calculator = new LogE();
-            Assert.Throws<Exception>(() => calculator.Calculate(firstArgument));
-
-        }
-
     }
 }

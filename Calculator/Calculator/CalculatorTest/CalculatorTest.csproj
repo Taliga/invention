@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OneArgument\ArccosinusTest.cs" />
-    <Compile Include="TwoArgument\MinTest.cs" />
+    <Compile Include="TwoArguments\MinTest.cs" />
     <Compile Include="OneArgument\ArctangentTest.cs" />
     <Compile Include="OneArgument\CosinusTest.cs" />
     <Compile Include="OneArgument\CotangentTest.cs" />
@@ -60,9 +60,9 @@
     <Compile Include="OneArgument\LogETest.cs" />
     <Compile Include="OneArgument\RadicalTest.cs" />
     <Compile Include="OneArgument\TangentTest.cs" />
-    <Compile Include="TwoArgument\MaxTest.cs" />
-    <Compile Include="TwoArgument\NumberPowTest.cs" />
-    <Compile Include="TwoArgument\NumberRootTest.cs" />
+    <Compile Include="TwoArguments\MaxTest.cs" />
+    <Compile Include="TwoArguments\NumberPowTest.cs" />
+    <Compile Include="TwoArguments\NumberRootTest.cs" />
     <Compile Include="OneArgument\OneArgumentFactoryTest.cs" />
     <Compile Include="OneArgument\LogarithmTest.cs" />
     <Compile Include="OneArgument\ModuleTest.cs" />
@@ -71,11 +71,11 @@
     <Compile Include="OneArgument\SinusHTest.cs" />
     <Compile Include="OneArgument\StepenTest.cs" />
     <Compile Include="OneArgument\TanHTest.cs" />
-    <Compile Include="TwoArgument\TwoArgumentFactoryTest.cs" />
-    <Compile Include="TwoArgument\AddTest.cs" />
-    <Compile Include="TwoArgument\DivisionTest.cs" />
-    <Compile Include="TwoArgument\MultiplyTest.cs" />
-    <Compile Include="TwoArgument\SubstractionTest.cs" />
+    <Compile Include="TwoArguments\TwoArgumentFactoryTest.cs" />
+    <Compile Include="TwoArguments\AddTest.cs" />
+    <Compile Include="TwoArguments\DivisionTest.cs" />
+    <Compile Include="TwoArguments\MultiplyTest.cs" />
+    <Compile Include="TwoArguments\SubstractionTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

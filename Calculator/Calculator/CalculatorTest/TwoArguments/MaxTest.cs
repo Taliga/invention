@@ -1,22 +1,20 @@
 ﻿using Calculator.TwoArguments;
 using NUnit.Framework;
 
-namespace CalculatorTest.TwoArgument
+namespace CalculatorTest.TwoArguments
 {
-   
-        public class SubstractionTest
-        {
-
-        [TestCase(0, 0, 0)]
-        [TestCase(3, 4, -1)]
-        [TestCase(-7, -2, -5)]
+    [TestFixture]
+    public class MaxTest
+    {
+        [TestCase(2, 0.5, 2)]
+        [TestCase(2, 1, 2)]
+        [TestCase(-4, 0.5, 0.5)]
         public void CalculateTest(double firstValue, double secondValue, double expected)
         {
-            var calculator = new Substraction();
+            var calculator = new Max();
             var actualResult = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, actualResult);
         }
-        }
-
     }
+}
 

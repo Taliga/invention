@@ -1,10 +1,14 @@
 ﻿using System;
-using System.Runtime.Remoting.Messaging;
 
 namespace Calculator.OneArgument
 {
-    public class OneArgumentFactory
+    public static class OneArgumentFactory
     {
+        /// <summary>
+        /// Create Factory OneArgumentFactory
+        /// </summary>
+        /// <param name="calculatorName"></param>
+        /// <returns></returns>
         public static IOoneCalculator CreateCalculator(string calculatorName)
         {
             switch (calculatorName)

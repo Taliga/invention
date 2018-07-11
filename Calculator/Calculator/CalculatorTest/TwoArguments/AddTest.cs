@@ -1,23 +1,27 @@
 ﻿using Calculator.TwoArguments;
 using NUnit.Framework;
 
-namespace CalculatorTest.TwoArgument
+namespace CalculatorTest.TwoArguments
 {
- 
-        public class NumberPowTest
+    [TestFixture]
+    public class AddTest
+    {
+        [TestFixture]
+        public class AddTests
         {
-
-            [TestCase(0, 0, 1)]
-            [TestCase(2, 2, 4)]
-            [TestCase(-2, 3, -8)]
+            [TestCase(0, 0, 0)]
+            [TestCase(3, 4, 7)]
+            [TestCase(-7, -2, -9)]
             public void CalculateTest(double firstValue, double secondValue, double expected)
             {
-                var calculator = new NumberPow();
+                var calculator = new Add();
                 var actualResult = calculator.Calculate(firstValue, secondValue);
                 Assert.AreEqual(expected, actualResult);
             }
-
         }
-
     }
+}
+
+
+
 

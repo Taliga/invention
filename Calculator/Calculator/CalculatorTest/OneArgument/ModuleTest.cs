@@ -3,9 +3,9 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
+    [TestFixture]
     public class ModuleTest
     {
-
         [TestCase(-12, 12)]
         [TestCase(3, 3)]
         [TestCase(-11, 11)]
