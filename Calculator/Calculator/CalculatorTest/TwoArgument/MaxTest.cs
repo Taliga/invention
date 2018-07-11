@@ -3,8 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.TwoArgument
 {
-    public class MaxTests
-    {
+   
 
         public class MaxTest
         {
@@ -22,4 +21,4 @@ namespace CalculatorTest.TwoArgument
         }
 
     }
-}
+

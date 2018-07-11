@@ -3,8 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-    public class TanHTests
-    {
+   
 
         public class TanHTest
         {
@@ -22,4 +21,4 @@ namespace CalculatorTest.OneArgument
 
         }
     }
-}
+

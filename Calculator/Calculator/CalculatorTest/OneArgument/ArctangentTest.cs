@@ -3,8 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-  public  class ArctangentTests
-    {
+ 
         
         public class ArctangentTest
         {
@@ -19,6 +18,6 @@ namespace CalculatorTest.OneArgument
             }
         }
 
-    }
+    
 }
 

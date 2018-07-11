@@ -4,9 +4,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.TwoArgument
 {
-    public class MinTests
-    {
-        
+  
         public class MinTest
         {
             [TestCase(12,22, 12)]
@@ -21,4 +19,4 @@ namespace CalculatorTest.TwoArgument
         }
 
     }
-}
+

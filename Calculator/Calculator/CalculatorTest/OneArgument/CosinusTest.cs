@@ -3,8 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-    public class CosinusTests
-    {
+
         public class CosinusTest
         {
             [TestCase(0.9, 0.6216)]
@@ -19,4 +18,4 @@ namespace CalculatorTest.OneArgument
         }
 
     }
-}
+

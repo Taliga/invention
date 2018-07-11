@@ -5,9 +5,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-    public class ArccosinusTests
-    {
-        public class ArccosinusTest
+   public class ArccosinusTest
         {
             [TestCase(0.9, 0.4510)]
             [TestCase(0.6, 0.9272)]
@@ -18,15 +16,17 @@ namespace CalculatorTest.OneArgument
                 var actualResult = calculator.Calculate(firstValue);
                 Assert.AreEqual(expected, actualResult, 0.1);
             }
+
+        [TestCase(-2)]
+        [TestCase(2)]
+        public void ExceptionTest(double firstArgument)
+        {
+            var calculator = new Arccosinus();
+            Assert.Throws<Exception>(() => calculator.Calculate(firstArgument));
         }
 
- [TestCase(-2)]
- [TestCase(2)]
-        public void ExceptionTest(double firstArgument)
-    {
-      var calculator = new Arccosinus();
-        Assert.Throws<Exception>(() => calculator.Calculate(firstArgument));
-     }
-    }
+        }
+
+    
 }
 

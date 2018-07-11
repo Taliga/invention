@@ -3,8 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-    public class CosHTests
-    {
+
 
         public class CosHTest
         {
@@ -23,4 +22,3 @@ namespace CalculatorTest.OneArgument
         }
 
     }
-}

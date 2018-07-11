@@ -3,10 +3,9 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-    public class SinusHTests
-    {
+   
 
-        public class SinusTest
+        public class SinusHTest
         {
 
             [TestCase(-0.3, -0.3045)]
@@ -23,4 +22,4 @@ namespace CalculatorTest.OneArgument
         }
 
     }
-}
+

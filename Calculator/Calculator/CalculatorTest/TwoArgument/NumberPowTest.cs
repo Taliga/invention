@@ -3,9 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.TwoArgument
 {
-    public class NumberPowTests
-    {
-
+ 
         public class NumberPowTest
         {
 
@@ -22,4 +20,4 @@ namespace CalculatorTest.TwoArgument
         }
 
     }
-}
+

@@ -4,8 +4,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-    class RadicalTests
-    {
+    
         public class RadicalTest
         {
             [TestCase(4, 2)]
@@ -17,7 +16,7 @@ namespace CalculatorTest.OneArgument
                 var actualResult = calculator.Calculate(firstValue);
                 Assert.AreEqual(expected, actualResult);
             }
-        }
+        
 
         [TestCase(-1)]
 

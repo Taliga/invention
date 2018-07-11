@@ -3,8 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-    public class TangentTests
-    {
+  
         
         public class TangentTest
         {
@@ -20,4 +19,4 @@ namespace CalculatorTest.OneArgument
         }
 
     }
-}
+

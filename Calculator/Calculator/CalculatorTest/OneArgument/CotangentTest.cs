@@ -3,8 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-   public class CotangentTests
-    {
+  
         public class CotangentTest
         {
             [TestCase(0.9, 0.7936)]
@@ -18,4 +17,4 @@ namespace CalculatorTest.OneArgument
             }
         }
     }
-}
+

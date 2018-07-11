@@ -3,8 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.TwoArgument
 {
-    public class NumberRootTests
-    {
+ 
 
         public class NumberRootTest
         {
@@ -22,4 +21,4 @@ namespace CalculatorTest.TwoArgument
         }
 
     }
-}
+

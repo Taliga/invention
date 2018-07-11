@@ -3,8 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-    public class CubeTests
-    {
+   
         
         public class CubeTest
         {
@@ -19,4 +18,4 @@ namespace CalculatorTest.OneArgument
             }
         }
     }
-}
+

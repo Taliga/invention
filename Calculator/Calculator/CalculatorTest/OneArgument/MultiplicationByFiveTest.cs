@@ -3,8 +3,7 @@ using NUnit.Framework;
 
 namespace CalculatorTest.OneArgument
 {
-    class MultiplicationByFiveTests
-    {
+   
         public class MultiplicationByFiveTest
         {
             [TestCase(2, 10)]
@@ -18,5 +17,5 @@ namespace CalculatorTest.OneArgument
             }
         }
 
-    }
+    
 }
