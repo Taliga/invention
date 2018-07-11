@@ -6,6 +6,20 @@ namespace Calculator.OneArgument
     {
         public double Calculate(double firstArgument)
         {
+            if (firstArgument < 0)
+            {
+
+                throw new Exception("Не может быть отрицательным");
+
+            }
+
+            else if (firstArgument == 0)
+            {
+
+                throw new Exception("Бесконечно убывает");
+
+            }
+
             return Math.Log(firstArgument);
       
         }

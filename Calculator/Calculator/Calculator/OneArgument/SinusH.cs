@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    class SinH : IOoneCalculator
+    public class SinH : IOoneCalculator
     {
 
         public double Calculate(double firstArgument)

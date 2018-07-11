@@ -2,11 +2,26 @@
 
 namespace Calculator.OneArgument
 {
-    class LogE : IOoneCalculator
+    public class LogE : IOoneCalculator
     {
 
         public double Calculate(double firstArgument)
         {
+
+            if (firstArgument < 0)
+            {
+
+                throw new Exception("Не может быть отрицательным");
+
+            }
+
+            else if (firstArgument == 0)
+            {
+
+                throw new Exception("Бесконечно убывает");
+
+            }
+
 
             return Math.Log(firstArgument);
 

@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    class CosH : IOoneCalculator
+    public class CosH : IOoneCalculator
     {
 
         public double Calculate(double firstArgument)

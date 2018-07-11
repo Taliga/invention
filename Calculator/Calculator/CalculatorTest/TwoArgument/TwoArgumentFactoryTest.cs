@@ -11,6 +11,9 @@ namespace CalculatorTest.TwoArgument
         [TestCase("Substraction", typeof(Substraction))]
         [TestCase("Division", typeof(Division))]
         [TestCase("Multiply", typeof(Multiply))]
+        [TestCase("Max", typeof(Max))]
+        [TestCase("NumberPow", typeof(NumberPow))]
+        [TestCase("NumberRoot", typeof(NumberRoot))]
 
         public void CalculateTest(string name, Type type)
         {

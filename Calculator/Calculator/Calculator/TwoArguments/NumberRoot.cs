@@ -8,7 +8,7 @@ namespace Calculator.TwoArguments
         public double Calculate(double firstArgument, double secondArgument)
         {
 
-            return Math.Sqrt( firstArgument);
+            return Math.Pow(firstArgument, 1f / secondArgument);
 
         }
     }

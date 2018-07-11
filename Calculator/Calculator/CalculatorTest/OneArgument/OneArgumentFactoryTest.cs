@@ -11,6 +11,14 @@ namespace CalculatorTest.OneArgument
         [TestCase("Sinus", typeof(Sinus))]
         [TestCase("Module", typeof(Module))]
         [TestCase("Squaring", typeof(Squaring))]
+        [TestCase("ArcSin", typeof(ArcSinus))]
+        [TestCase("Stepen", typeof(Stepen))]
+        [TestCase("LogE", typeof(LogE))]
+        [TestCase("Log10", typeof(Log10))]
+        [TestCase("TanH", typeof(TanH))]
+        [TestCase("SinH", typeof(SinH))]
+        [TestCase("CosH", typeof(CosH))]
+
 
         public void CalculateTest(string name, Type type)
         {
