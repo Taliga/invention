@@ -14,6 +14,12 @@ namespace Calculator.TwoArguments
                 throw new Exception("Второй аргумент не может быть равен 0");
 
             }
+            else if (firstArgument < 0)
+            {
+
+                throw new Exception("Не может быть отрицательным");
+
+            }
 
             return Math.Pow(firstArgument, 1f / secondArgument);
 

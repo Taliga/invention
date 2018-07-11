@@ -20,9 +20,17 @@ namespace CalculatorTest.TwoArgument
                 Assert.AreEqual(expected, actualResult);
             }
 
-        
+
             [TestCase(1, 0)]
             public void ExceptionZeroTest(double firstArgument, double secondArgument)
+            {
+                var calculator = new NumberRoot();
+                Assert.Throws<Exception>(() => calculator.Calculate(firstArgument, secondArgument));
+
+            }
+
+            [TestCase(-1, 4)]
+            public void ExceptionLessThanZeroTest(double firstArgument, double secondArgument)
             {
                 var calculator = new NumberRoot();
                 Assert.Throws<Exception>(() => calculator.Calculate(firstArgument, secondArgument));
