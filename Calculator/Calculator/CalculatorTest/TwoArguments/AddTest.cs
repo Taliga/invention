@@ -6,8 +6,7 @@ namespace CalculatorTest.TwoArguments
     [TestFixture]
     public class AddTest
     {
-        [TestFixture]
-        public class AddTests
+       public class AddTests
         {
             [TestCase(0, 0, 0)]
             [TestCase(3, 4, 7)]
@@ -21,7 +20,3 @@ namespace CalculatorTest.TwoArguments
         }
     }
 }
-
-
-
-

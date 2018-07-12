@@ -11,7 +11,6 @@ namespace Calculator
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -43,9 +42,7 @@ namespace Calculator
             }
             catch (Exception exc)
             {
-
                 textBox3.Text = exc.Message;
-
             }
         }
 

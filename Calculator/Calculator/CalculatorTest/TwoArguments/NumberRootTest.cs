@@ -9,7 +9,7 @@ namespace CalculatorTest.TwoArguments
     {
         [TestCase(2, 0.5, 4)]
         [TestCase(2, 1, 2)]
-        [TestCase(-4, 0.5, 16)]
+        [TestCase(4, 0.5, 16)]
         public void CalculateTest(double firstValue, double secondValue, double expected)
         {
             var calculator = new NumberRoot();

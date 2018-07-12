@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@using (Html.BeginForm("Index", "Home", "post"))
+{
+    <input type="number" name="firstNumber" value="0" /><br />
+    <input type="number" name="secondNumber" value="0" /><br />
+    <select name="operation">
+        @foreach (var operation in ViewBag.operations)
+        {
+            <option value="@operation.Value">
+                @operation.Text
+            </option>
+        }
+    </select>
+    <input type="submit" value="Calculate" />
+}
+<p>
+    @ViewBag.result
+</p>
